@@ -70,7 +70,7 @@ body {
     #container {
         width: 80%;
     }
-
+}
 
 @media screen and (min-width: 800px) {
     .item1 {
@@ -85,6 +85,7 @@ body {
       display: block;
     }
 
+}
 
 @media screen and (min-width:1000px) {
   article {
