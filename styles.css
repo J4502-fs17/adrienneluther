@@ -1,11 +1,41 @@
 p{
-  color:#664262;
+  color:#162a30;
   font-family:"Noto", "Times New Roman", serif;  font-size: 16pt;
   font-weight: bold;
 }
 
 img {
   max-width:100%;
+}
+
+nav ul li {
+  display: block;
+  border-top: 1px #79896d solid;
+}
+
+nav a {
+  color: #f8ecc2;
+  display: block;
+  text-decoration: none;
+  padding: 20px 30px;
+}
+
+header{
+  background-color: #65a8a6;
+  margin: 0;
+  padding: 0 10px;
+  display: flex;
+  flex-flow: row;
+}
+
+.menu-trigger {
+  order: 1;
+
+}
+
+header h1 {
+  order: 2;
+  color: white;
 }
 
 .caption {
@@ -22,6 +52,28 @@ h1{
   font-weight: normal;
   color: #36084c
 }
+
+nav ul{
+  display: none;
+
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 600px) {
+	.container {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.img {
+		float: left;
+	}
+}
+
 
 .caption {
   font-family: Georgia, "Times New Roman", serif;
@@ -131,5 +183,25 @@ body {
         "a b b e"
         "c c c ."
         ". d d .";
+  }
+}
+
+
+
+@media screen and (min-width: 700px){
+
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    border-top: none;
+  }
+
+  .menu-trigger {
+    display: none;
+  }
+
+  nav{
+    order: 2;
   }
 }
