@@ -28,6 +28,13 @@ header{
   flex-flow: row;
 }
 
+.map-wrapper {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
 .menu-trigger {
   order: 1;
 
